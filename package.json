@@ -1,19 +1,21 @@
 {
   "name": "ngl-setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "bin": {
     "ngl-setup": "dist/bin/setup-cli.js"
   },
   "scripts": {
-    "test": "npx ngl-setup init",
-    "test:run": "npx ngl-setup run startup",
     "build": "npx ngl-build build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/node": "^24.0.4",
     "@types/yargs": "^17.0.33",

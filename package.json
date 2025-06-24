@@ -1,0 +1,27 @@
+{
+  "name": "ngl-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ngl-setup": "dist/bin/setup-cli.js"
+  },
+  "scripts": {
+    "test": "npx ngl-setup init",
+    "test:run": "npx ngl-setup run startup",
+    "build": "npx ngl-build build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "@types/yargs": "^17.0.33",
+    "ngl-build": "^1.0.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "yargs": "^18.0.0"
+  }
+}

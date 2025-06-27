@@ -11,11 +11,7 @@ jobs:
     permissions:
       id-token: write
     steps:
-    - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 24
-        registry-url: https://registry.npmjs.org/
+    # Uses Infisical to get credentials from internal secret store server and add the secrets to environment 
     - name: Import Secrets
       uses: Infisical/secrets-action@v1.0.12
       with:
@@ -23,6 +19,13 @@ jobs:
         env-slug: "dev"
         project-slug: "github-g0zh"
         identity-id: "1ffe6b17-29ef-47ed-a54c-0912bbe40542"
+    - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
+      with:
+        token: ${{env.NGLBOT}}
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 24
+        registry-url: https://registry.npmjs.org/
     - name: build
       run: |
         npm i

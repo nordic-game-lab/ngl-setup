@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: Andrew Ball <andrew@aball.dev>
+// SPDX-License-Identifier: MPL-2.0
 const fs = require('fs-extra');
 const path = require('path');
 

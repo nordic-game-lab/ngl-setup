@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+// SPDX-FileCopyrightText: Andrew Ball <andrew@aball.dev>
+// SPDX-License-Identifier: MPL-2.0
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 const path = require('path');

@@ -40,3 +40,6 @@ module.exports = {
 | -------------- | --------------------------------|
 | `--help, -h`   | Show help message                |
 | `--version, -v`| Show version number              |
+
+## License
+This project is licensed under the Mozilla Public License version 2.0

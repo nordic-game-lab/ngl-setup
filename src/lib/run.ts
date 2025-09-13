@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: Andrew Ball <andrew@aball.dev>
+// SPDX-License-Identifier: MPL-2.0
 const { exec } = require('child_process');
 
 // Helper to run commands

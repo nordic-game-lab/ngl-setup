@@ -21,7 +21,7 @@ jobs:
         env-slug: "dev"
         project-slug: "github-g0zh"
         identity-id: "1ffe6b17-29ef-47ed-a54c-0912bbe40542"
-    - uses: actions/checkout@8edcb1bdb4e267140fa742c62e395cd74f332709
+    - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493
       with:
         token: ${{env.NGLBOT}}
     - uses: actions/setup-node@v4

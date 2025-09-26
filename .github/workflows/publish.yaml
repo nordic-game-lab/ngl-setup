@@ -15,7 +15,7 @@ jobs:
     steps:
     # Uses Infisical to get credentials from internal secret store server and add the secrets to environment 
     - name: Import Secrets
-      uses: Infisical/secrets-action@v1.0.13
+      uses: Infisical/secrets-action@v1.0.15
       with:
         method: "oidc"
         env-slug: "dev"
